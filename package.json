@@ -1,0 +1,21 @@
+{
+  "name": "ras-nexus",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:web": "turbo run dev --filter=@ras-nexus/web",
+    "dev:desktop": "turbo run dev --filter=@ras-nexus/desktop",
+    "build": "turbo run build",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "turbo": "^1.12.4",
+    "typescript": "^5.5.3"
+  }
+}
